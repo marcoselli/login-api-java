@@ -47,7 +47,7 @@ KEY: "Authorization", Value: "Bearer " (with an space at the final) + tokenValue
 In this path you can register users correctly, once the fields are validated the password are encrypted using Bcrypt Hash, you can confirm in the H2 database.<br><br>
 
 ## DATA
-+ Path: http://localhost:8080/users/data
++ Path: http://localhost:8080/users/data<br>
 You will receive a message with the decrypted token in the response body.<br><br>
 
 ## Technologies used:
