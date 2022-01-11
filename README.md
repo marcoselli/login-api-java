@@ -18,7 +18,11 @@ First of all you need to insert in database the user data to sign in, this appli
 #### If you go access the H2 Database:
 - Make sure that the JDBC URL path is "jdbc:h2:file:./src/main/resources/db/data"
 - UserName: "sa"
-- Password: ""<br><br>
+- Password: ""<br>
+
+#### Note:
+The first time you access the application, before you insert the data in the database you need encrypt the password using Bcrypt Hash.
+You can generate here: https://www.browserling.com/tools/bcrypt <br><br>
 
 ## LOGIN 
 + Path: http://localhost:8080/login<br>
@@ -37,7 +41,7 @@ With this token you grant access to:<br>
 + http://localhost:8080/users/data<br>
 + http://localhost:8080/users/save<br><br>
 
-## NOTES 
+#### Note:
 Next you will have access to the paths mentioned, follow this steps to fill the requested fields, otherwise you will receibe an HTTP Status 403 - Forbidden:<br>
 In the REQUEST HEADER<br>
 KEY: "Authorization", Value: "Bearer " (with an space at the final) + tokenValue (saved previously)<br><br>
