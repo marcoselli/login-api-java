@@ -12,7 +12,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "TB_USUARIO")
+@Table(name = "TB_USUARIOS")
 @SequenceGenerator(name = "user_seq", sequenceName = "USER_SEQ", initialValue = 1, allocationSize = 1)
 public class UserEntity {
 
