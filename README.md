@@ -1,7 +1,7 @@
 <h1>Login API</h1>
 <h2>Kyros internship challenge</h2>
 
-#### It is a simple login application wich generate a JWT Token to validade the session and enable the access to the others endpoints.
+#### It is a simple login application wich generate a JWT Token to validate the session and enable the access to the others endpoints.
 
 ## How to configure the project:
 
